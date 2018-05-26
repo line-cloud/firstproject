@@ -1,0 +1,140 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.pool{
+    &-wrap{
+        position: absolute;
+        top: 73px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow-y:hidden;
+    }
+    &-top-tool{
+        padding: 10px 15px;
+    }
+}
+.mate{
+    &-list{
+        position: absolute;
+        top: 56px;
+        bottom: 0;
+        overflow-y:scroll;
+    }
+    &-wrap{
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    &-image-wrap{
+        position: relative;
+        padding-top: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    &-image-wrap.samll{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        padding-top: 0;
+        margin: 5px 10px 0 0;
+        cursor: pointer;
+    }
+    &-image-wrap.video:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(23,23,23,.3) url(http://mat1.gtimg.com/www/images/newsapp/wxapp/kuaibao/icon_video.png) center no-repeat;
+        background-size: 60px;
+    }
+    &-image-wrap.samll.video:before{
+        background-size: 30px;
+    }
+    &-image-wrap.gif:before{
+        content: 'GIF';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0 5px;
+        height: 32px;
+        line-height: 32px;
+        color: #fff;
+        background-color: rgba(0,0,0,0.7);
+        font-size: 24px;
+    }
+    &-image-wrap.samll.gif:before{
+        height: 16px;
+        line-height: 16px;
+        font-size: 12px;
+    }
+    &-image-selected-msak{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        line-height: 100%;
+        color: #13ce66;
+        background: rgba(23,23,23,.5);
+        text-align: center;
+        i{
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            font-size: 50px;
+        }
+    }
+    &-bottom{
+        padding: 14px;
+        .select-btn{
+            float: right;
+        }
+    }
+    &-bottom.selected{
+        background-color: rgba(19,206,102,0.3);
+    }
+/*    &-selector-wrap{
+        text-align: right;
+    }*/
+}
+.mate-form .mate-bottom{
+    padding: 0;
+    text-align: center;
+}
+.mate-form-list{
+    width: 100%;
+    clear: both;
+    .mate-image-wrap.video:before{
+        background-size: 40px;
+    }
+}
+
+.video-wrap{
+    position: absolute;
+    z-index: 9999;
+}
+
+/*边距高度, 调整边距用,请放置在最下方*/
+.mt4{margin-top: 4px;}
+.mt8{margin-top: 8px;}
+.mt10{margin-top: 10px;}
+.mt12{margin-top: 12px;}
+.mt20{margin-top: 20px;}
+.mb4{margin-bottom: 4px;}
+.mb10{margin-bottom: 10px;}
+.mb12{margin-bottom: 12px;}
+.mb20{margin-bottom: 20px;}
+
+.ta-left{text-align: left;}
+.ta-right{text-align: right;}
+
+.el-pagination{
+    text-align: right;
+    margin-top: 20px;
+}
